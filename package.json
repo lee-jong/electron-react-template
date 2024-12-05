@@ -15,8 +15,8 @@
     "dev": "electron-vite dev",
     "app:build": "npm run typecheck && electron-vite build",
     "postinstall": "electron-builder install-app-deps",
-    "app:build:win": "npm run build && electron-builder --win --x64",
-    "app:build:xos": "electron-vite build && electron-builder --mac --publish never"
+    "app:build:win": "npm run app:build && electron-builder --win --x64",
+    "app:build:xos": "npm run app:build && electron-builder --mac --publish never"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",

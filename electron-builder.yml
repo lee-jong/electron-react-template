@@ -20,7 +20,6 @@ win:
 msi:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
-  # uninstallDisplayName: ${productName} msi x
   createDesktopShortcut: always
 mac:
   entitlementsInherit: build/entitlements.mac.plist

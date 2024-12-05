@@ -15,10 +15,12 @@ asarUnpack:
   - resources/**
 win:
   executableName: electron-react-template
-nsis:
+  target:
+    - msi
+msi:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
-  uninstallDisplayName: ${productName}
+  # uninstallDisplayName: ${productName} msi x
   createDesktopShortcut: always
 mac:
   entitlementsInherit: build/entitlements.mac.plist

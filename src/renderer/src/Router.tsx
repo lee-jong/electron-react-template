@@ -1,9 +1,9 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 
 import Main from './pages/Main'
 import Login from './pages/Login'
 
-export default createBrowserRouter([
+export default createHashRouter([
   { path: '/', element: <Main /> },
   { path: '/login', element: <Login /> }
 ])
